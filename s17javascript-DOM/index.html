@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 offset-md-3">
+          <h1>Mi Form</h1>
+          <form action="" class="border border-success p-3">
+            <div class="form-group">
+              <label for="">Nombre</label>
+              <input
+                id="user-name"
+                type="text"
+                class="form-control"
+                name="user"
+                value="Is"
+                data-points-to="name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Dirección</label>
+              <input
+                id="user-address"
+                type="text"
+                class="form-control"
+                name="user"
+                value="San mateo 172"
+                data-points-to="address"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Teléfono</label>
+              <input
+                id="user-phone"
+                type="text"
+                class="form-control"
+                name="user"
+                value="5543788096"
+                data-points-to="phone"
+              />
+            </div>
+          </form>
+          <button id="submit-button" class="btn btn-primary mt-3">
+            Guardar
+          </button>
+        </div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Dirección</th>
+          <th>Teléfono</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>Número</td>
+        <td>Text 1</td>
+        <td>Text 2</td>
+        <td>Text 3</td>
+      </tr>
+    </table>
+    <h2 id="dynamic-text">Texto inicial</h2>
+    <ul id="my-list"></ul>
+    <script src="js/main.js"></script>
+  </body>
+</html>
