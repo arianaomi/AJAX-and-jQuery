@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <form class="border border-primary p-5 mt-4">
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput2"
+                name="user"
+                data-points-to="name"
+                value="Israel"
+              />
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Direccion</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput3"
+                name="user"
+                data-points-to="address"
+              />
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Teléfono</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput4"
+                name="user"
+                data-points-to="phone"
+              />
+            </div>
+            <div class="d-flex justify-content-between">
+              <button
+                type="button"
+                class="btn btn-danger mt-3 btn-sm"
+                id="delete-button"
+              >
+                Borrar último
+              </button>
+              <button id="submit-button" class="btn btn-primary mt-3 btn-sm">
+                Guardar
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <!-- Tabla -->
+
+          <table class="table table-hover table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">E-mail</th>
+              </tr>
+            </thead>
+            <tbody id="koders-table"></tbody>
+          </table>
+          <!-- Fin tabla -->
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
